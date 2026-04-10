@@ -13,7 +13,6 @@ Requirements:
 ___________________________________
 |To run app, run display_lyrics.py|
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-___
 Features:
     The lyrics automatically change when the song changes
     GUI is always on top of every other window (might add smthg to turn this at some point later)
