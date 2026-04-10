@@ -13,3 +13,10 @@ Requirements:
 ___________________________________
 |To run app, run display_lyrics.py|
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+Features:
+    The lyrics automatically change when the song changes
+    GUI is always on top of every other window (might add smthg to turn this at some point later)
+    Idk what else this was my only goal
+
+I will later on write this in C++ so it can be compiled and there wont be any dependency problems
