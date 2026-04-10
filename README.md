@@ -20,3 +20,5 @@ Features:
     Idk what else this was my only goal
 
 I will later on write this in C++ so it can be compiled and there wont be any dependency problems
+
+idk if adding a license is the correct thing to do but i may asw. not like it affects anything
