@@ -12,6 +12,7 @@ song = song_artist_tuple[0]
 artist = song_artist_tuple[1]
 lyrics = get_lyrics(song, artist)
 
+
 def check_song_inf():
     while True:
         if check_song_once():
@@ -44,7 +45,7 @@ def poll_event():
 width = 600
 height = 600
 spawn_x = 2500
-spawn_y = 300
+spawn_y = 300 
 
 threading.Thread(target=check_song_inf, daemon=True).start()
 
