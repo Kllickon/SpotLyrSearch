@@ -8,6 +8,15 @@ TO RUN SCRIPT:
 2. Right click in folder and open in terminal
 3. Use command 'uv run display_lyrics.py' in terminal (without single quotes)
 
+If the instructions above don't work:
+install all the libraries below
+1. ```pip install pywin32```
+2. ```pip install customtkinter```
+3. ```pip install requests```
+4. ```pip install psutil```
+5. Get at least a semi recent python version (I use 3.11)
+
+
 Requirements:
 1. Spotify app (When playing a song, the title of the window needs to be of the form "{Artist} - {Song}" (spaces dont matter but the first dash needs to separate the artist from the song))
 2. Windows
