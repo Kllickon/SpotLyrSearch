@@ -51,6 +51,8 @@ screen_width, screen_height =  root.winfo_screenwidth(), root.winfo_screenheight
 width = 600
 height = 600
 
+
+
 spawn_x = int(screen_width*0.75 - width*0.5)
 spawn_y = int(screen_height*0.5 - height*0.5)
 print(spawn_y)
