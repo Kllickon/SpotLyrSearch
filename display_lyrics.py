@@ -42,14 +42,19 @@ def poll_event():
     recieve_song_change()
     root.after(100, poll_event)
 
-width = 600
-height = 600
-spawn_x = 2500
-spawn_y = 300 
-
 threading.Thread(target=check_song_inf, daemon=True).start()
 
 root = ctk.CTk(fg_color="#3B1465")
+
+screen_width, screen_height =  root.winfo_screenwidth(), root.winfo_screenheight()
+
+width = 600
+height = 600
+
+spawn_x = int(screen_width*0.75 - width*0.5)
+spawn_y = int(screen_height*0.5 - height*0.5)
+print(spawn_y)
+
 root.title(f"{song} - {artist}")
 root.geometry(f"{width}x{height}+{spawn_x}+{spawn_y}")
 root.attributes("-topmost", True)

@@ -64,6 +64,7 @@ def get_lyrics(song, artist) -> str:
     else:
         #Tries Youtube
         URL = f"https://lyrics.lewdhutao.my.eu.org/v2/youtube/lyrics?title={song}&artist={artist}"
+        print(URL)
         response_code = requests.get(URL)
         # print(response_code)
         data = response_code.json()["data"]
