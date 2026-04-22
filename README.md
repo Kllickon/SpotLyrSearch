@@ -4,9 +4,11 @@ Displays lyrics of song you're listening to on Spotify in a tkinter window
 Could work for other apps if you know the executable name and if the other apps put the song in their window title (plus some more editting of the code so that the song and artist are correctly assigned)
 
 TO RUN SCRIPT:
-1. Download zip file and extract into where you wish to save
-2. Right click in folder and open in terminal
-3. Use command 'uv run display_lyrics.py' in terminal (without single quotes)
+1. Install Python
+2. Download zip file and extract into where you wish to save
+3. Right click in folder and open in terminal
+4. ```pip install uv```
+5. Use command 'uv run display_lyrics.py' in terminal (without single quotes)
 
 If the instructions above don't work:
 install all the libraries below
@@ -14,7 +16,6 @@ install all the libraries below
 2. ```pip install customtkinter```
 3. ```pip install requests```
 4. ```pip install psutil```
-5. Get at least a semi recent python version (I use 3.11)
 
 
 Requirements:
