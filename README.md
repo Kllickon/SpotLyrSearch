@@ -30,10 +30,10 @@ Current features:
 4. There is a cache to store the last 15 songs and their lyrics (arbitrary limit) so don't have to fetch again if a song is recently replayed
 
 Things I need to add later:
-~~1. Add a script to store the lyrics of recent songs for some time so don't have to fetch lyrics everytime~~
+1. ~~Add a script to store the lyrics of recent songs for some time so don't have to fetch lyrics everytime~~
 2. Get and display thumbnail image in background
 3. Add settings menu
-~~4. Set spawn location at 3/4 of monitor resolution (currently at a fixed pixel value (2500 as I have thicc monitor))~~
+4. ~~Set spawn location at 3/4 of monitor resolution (currently at a fixed pixel value (2500 as I have thicc monitor))~~
 5. Rewrite in C++ to solve dependency issues (not going to happen until after A levels)
     1. Replace polling with event when window name changes (no sense having a polling loop and also an event loop) - will likely be more efficient
 
