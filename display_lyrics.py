@@ -11,10 +11,14 @@ song_dict = {}
 signal_event = threading.Event()
 
 song_artist_tuple = get_song_artist_func()
-print(song_artist_tuple)
+# print(song_artist_tuple)
 song = song_artist_tuple[0]
 artist = song_artist_tuple[1]
 lyrics = get_lyrics(song, artist)
+
+song_dict[song_artist_tuple] = lyrics
+for k, v in song_dict.items():
+    print(k)
 
 
 def check_song_inf():
@@ -31,14 +35,19 @@ def recieve_song_change():
         song = song_artist_tuple[0]
         artist = song_artist_tuple[1]
 
-        if is_song_in_dict(song_dict, song_artist_tuple) == False:
+        song_dict_flag = is_song_in_dict(song_dict, song_artist_tuple)
+        if song_dict_flag == 0:
             lyrics = get_lyrics(song, artist)  
-            print("got em!")
-        else:
-            lyrics = song_dict[song_artist_tuple]
+            # print("got em!")
+        elif song_dict_flag == 1:
+            song_dict[song_artist_tuple] = lyrics
+        elif song_dict_flag == 2:
+            del song_dict[list(song_dict.keys())[0]]
+            song_dict[song_artist_tuple] = lyrics
         song_dict[song_artist_tuple] = lyrics
-        for k, v in song_dict.items():
-            print(k)
+        # for k, v in song_dict.items():
+        #     print(k)
+        # print("\n")
         root.title(f"{song} - {artist}")
         textbox.configure(state="normal")
         textbox.delete("0.0", "end")

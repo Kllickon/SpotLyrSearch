@@ -1,3 +1,10 @@
-bigDict = {"my": 1, "huge": 2, "chicken": 3, "is": 4, "balls": 5, ("hehe", "balls"): "f"}
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "horsepower": 200
+}
 
-print(bigDict[("hehe", "balls")])
+del thisdict[list(thisdict.keys())[0]]
+
+print(thisdict) 
