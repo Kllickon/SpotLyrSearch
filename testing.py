@@ -1,10 +1,2 @@
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  "horsepower": 200
-}
-
-del thisdict[list(thisdict.keys())[0]]
-
-print(thisdict) 
+asdf = "pls help im under the water"
+print(asdf[0:3])

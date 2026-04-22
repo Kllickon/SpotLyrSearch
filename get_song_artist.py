@@ -28,12 +28,14 @@ def check_index_error():
 
 def find_dash(song_artist):
     counter = 0
-    for i in song_artist:
-        if i == "-":
+    i = counter + 3
+    while counter < len(song_artist):
+        if song_artist[counter:i] == " - ":
             break
-
         counter += 1
-    return counter
+        i += 1
+    
+    return counter + 1
 
 def split_song_artist(song_artist, counter):
     artist = song_artist[:counter].strip()

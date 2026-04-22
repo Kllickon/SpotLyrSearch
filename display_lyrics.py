@@ -17,8 +17,8 @@ artist = song_artist_tuple[1]
 lyrics = get_lyrics(song, artist)
 
 song_dict[song_artist_tuple] = lyrics
-for k, v in song_dict.items():
-    print(k)
+# for k, v in song_dict.items():
+#     print(k)
 
 
 def check_song_inf():
