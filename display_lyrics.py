@@ -37,14 +37,12 @@ def recieve_song_change():
 
         song_dict_flag = is_song_in_dict(song_dict, song_artist_tuple)
         if song_dict_flag == 0:
-            lyrics = get_lyrics(song, artist)  
-            # print("got em!")
-        elif song_dict_flag == 1:
+            lyrics = song_dict[song_artist_tuple]
+        else:
+            lyrics = get_lyrics(song, artist)
+            if song_dict_flag == 1:
+                del song_dict[list(song_dict.keys())[0]]
             song_dict[song_artist_tuple] = lyrics
-        elif song_dict_flag == 2:
-            del song_dict[list(song_dict.keys())[0]]
-            song_dict[song_artist_tuple] = lyrics
-        song_dict[song_artist_tuple] = lyrics
         # for k, v in song_dict.items():
         #     print(k)
         # print("\n")
