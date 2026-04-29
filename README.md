@@ -38,4 +38,7 @@ Things I need to add later:
 5. Rewrite in C++ to solve dependency issues (not going to happen until after A levels)
     1. Replace polling with event when window name changes (no sense having a polling loop and also an event loop) - will likely be more efficient
 
-idk if adding a license is the correct thing to do but i may asw. not like it affects anything 
+idk if adding a license is the correct thing to do but i may asw. not like it affects anything
+
+Issues (will only get fixed after A-levels):
+1. KeyError gets thrown when playing some songs (the only example I've found is when playing Doomer by Tokyo Manaka) - I dont understand why because I thought I accounted for all KeyErrors
