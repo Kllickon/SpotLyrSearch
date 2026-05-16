@@ -1,7 +1,7 @@
 # SpotLyrSearch
 Displays lyrics of song you're listening to on Spotify in a tkinter window
 
-Could work for other apps if you know the executable name and if the other apps put the song in their window title (plus some more editting of the code so that the song and artist are correctly assigned)
+Could work for other apps if you know the executable name and if the other apps put the song and artist in their window title (plus some more editting of the code so that the song and artist are correctly assigned)
 
 TO RUN SCRIPT:
 1. Install Python
