@@ -1,7 +1,7 @@
 # SpotLyrSearch
 Displays lyrics of song you're listening to on Spotify in a tkinter window
-
-Could work for other apps if you know the executable name and if the other apps put the song and artist in their window title (plus some more editting of the code so that the song and artist are correctly assigned)
+0
+NOTE: I used AI to create the function that gets the spotify window and to help with multithreading. I will replace the function with my own once I understand pywin32 enough but I will keep the multithreading things since I understand how it works now and thus would not write it differently (also im lazy).
 
 TO RUN SCRIPT:
 1. Install Python
