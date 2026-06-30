@@ -2,6 +2,7 @@
 Displays lyrics of song you're listening to on Spotify in a tkinter window
 
 NOTE: I used AI to create the function that gets the spotify window and to help with multithreading. I will replace the function with my own once I understand pywin32 enough but I will keep the multithreading things since I understand how it works now and thus would not write it differently (also im lazy).
+
 NOTE2: This app is worthless so idt ill work on it much. the rewrite in cpp is almost definitely not happening because im an idiot and thought i could make a fully functioning GUI in a new language for me that is much lower level than the baby python ive been writing.
 
 TO RUN SCRIPT:
